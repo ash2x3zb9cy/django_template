@@ -1,6 +1,7 @@
 from ..APP_NAME import APP_NAME
 
 INSTALLED_APPS = [
+    'users',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

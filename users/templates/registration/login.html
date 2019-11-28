@@ -1,0 +1,7 @@
+<h1>Log In</h1>
+<form method="post">
+	{% csrf_token %}
+	{{form}}
+	<input type="submit" value="Log in">
+</form>
+<a href="{% url 'password_reset' %}">Reset password</a>

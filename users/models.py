@@ -14,3 +14,6 @@ class SiteUser(models.Model):
 		verbose_name="related internal user object",
 		related_name="site_user",
 	)
+
+	def __str__(self):
+		return self.equiv_user.username

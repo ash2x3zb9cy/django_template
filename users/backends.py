@@ -15,7 +15,7 @@ class CaseInsensitiveModelBackend(ModelBackend):
 				return user
 		except User.DoesNotExist:
 			# apparently this can reduce timing attacks on users
-			return none
+			return None
 
 	def get_user(self, user_id):
 		try:
